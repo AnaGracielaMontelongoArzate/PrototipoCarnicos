@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{titulo}}</h1>
+        <!-- Agregar primer dato --> 
+        <input type="text" v-model="nuevoDato1">
+        <!-- Agregar psegundo dato --> 
+        <input type="text" v-model="nuevoDato2">
+        <!-- Agregar tercer dato --> 
+        <input type="text" v-model="nuevoDato3">
+
+        <button @click="agregarDato">Agregar</button>
+
+        <ul>
+            <li v-for="dato of datos">
+                {{dato.Datos1}} - {{dato.Datos2}} - {{dato.Datos3}}</li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="01.js"></script>
+</body>
+</html>
